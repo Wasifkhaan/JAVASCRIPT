@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Post</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div class="post-container">
+    <h2>Create Post</h2>
+    <textarea id="postContent" placeholder="Write Here"></textarea>
+    <div class="post-options">
+      <label for="fileUpload" class="icon">📷</label>
+      <input type="file" id="fileUpload" multiple style="display: none;">
+      <label for="attachmentUpload" class="icon">📎</label>
+      <input type="file" id="attachmentUpload" style="display: none;">
+    </div>
+    <div class="preview-container" id="previewContainer">
+    </div>
+    <div class="privacy-options">
+      <label for="privacySelect">Post Privacy</label>
+      <select id="privacySelect">
+        <option value="public">Public</option>
+        <option value="friends">Friends</option>
+        <option value="private">Private</option>
+      </select>
+    </div>
+    <div class="action-buttons">
+      <button id="cancelBtn">Cancel</button>
+      <button id="publishBtn">Publish</button>
+    </div>
+  </div>
+  <script src="script.js"></script> 
+</body>
+</html>
