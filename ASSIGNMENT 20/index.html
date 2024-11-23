@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--                                      QUESTION NO:01                                               -->
+
+  <!-- <h2>Signup Form</h2>
+  <form id="signupForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="displayData" style="margin-top:20px;"></div> -->
+
+  <!--                                     QUESTION NO:02                                                -->
+  
+  
+    <!-- <h2>Item Details</h2>
+    <div id="itemContent">
+      <p>
+        This is a brief description of the item. 
+        <span id="moreText" style="display: none;">
+          Here is the full description with more information about the item. It includes all the details a user might want to know.
+        </span>
+      </p>
+      <button id="readMoreBtn">Read more</button>
+    </div>
+  
+   -->
+        
+   <!--                                     Question No:03                                               -->
+   <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+<h1>Student Details</h1>
+
+<form id="studentForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" required>
+
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" required>
+
+    <button type="submit">Add Student</button>
+</form>
+
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<form id="editForm" class="hidden">
+    <h3>Edit Student Details</h3>
+
+    <label for="editName">Name:</label>
+    <input type="text" id="editName" required>
+
+    <label for="editAge">Age:</label>
+    <input type="number" id="editAge" required>
+
+    <label for="editGrade">Grade:</label>
+    <input type="text" id="editGrade" required>
+
+    <button type="button" id="updateButton">Update</button>
+    <button type="button" id="cancelButton">Cancel</button>
+</form> 
+<script src="app.js"></script>
+</body>
+</html>
